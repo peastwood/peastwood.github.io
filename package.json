@@ -17,6 +17,5 @@
   },
   "homepage": "https://github.com/peastwood/peastwood.github.io#readme",
   "devDependencies": {
-    "bulma": "^0.7.5"
   }
 }
