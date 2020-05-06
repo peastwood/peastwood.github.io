@@ -1,0 +1,22 @@
+{
+  "name": "peastwood.github.io",
+  "version": "1.0.0",
+  "description": "Github Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peastwood/peastwood.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peastwood/peastwood.github.io/issues"
+  },
+  "homepage": "https://github.com/peastwood/peastwood.github.io#readme",
+  "devDependencies": {
+    "bulma": "^0.7.5"
+  }
+}
