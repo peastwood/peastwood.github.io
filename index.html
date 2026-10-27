@@ -1,52 +1,105 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PaulEastwood</title>
-
-    <meta name="description" content="" />
-    <meta name="copyright" content="" />
-    <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Paul Eastwood · Projects</title>
+    <meta name="description" content="Open-source web projects by Paul Eastwood.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css">
+    <style>
+      .project-shot img { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--bulma-border-weak); }
+      .icon-github { width: 1.1em; height: 1.1em; fill: currentColor; }
+    </style>
   </head>
   <body>
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a href="/" class="navbar-item" href="http://pauleastwood.org">
-            PaulEastwood.org
+          <a href="https://peastwood.github.io/" class="navbar-item has-text-weight-semibold">
+            peastwood.github.io
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu">
+        <div id="main-nav" class="navbar-menu">
           <div class="navbar-start">
-              <a href="/" class="navbar-item is-hoverable">
-                Home
-              </a>
+            <a href="#projects" class="navbar-item">Projects</a>
           </div>
           <div class="navbar-end">
-                <a href="https://github.com/peastwood/peastwood.github.io" class="navbar-item is-hoverable">
-                  View on Github
-                </a>
+            <a href="https://github.com/peastwood" class="navbar-item">
+              <span class="icon-text">
+                <span class="icon"><svg class="icon-github" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span>
+                <span>GitHub</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>
     </nav>
-    <section>
-      <div class="container">
-        <h2>
 
-       </h2>
-     </div>
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="title is-4">Projects</h2>
+        <div class="columns">
+          <div class="column is-half">
+            <div class="card">
+              <div class="card-image project-shot">
+                <a href="https://peastwood.github.io/dividers/">
+                  <img src="assets/dividers.png" width="1280" height="800"
+                       alt="The Website Dividers catalog: category filters, a search box, and cards previewing plain horizontal rules.">
+                </a>
+              </div>
+              <div class="card-content">
+                <p class="title is-5">
+                  <a href="https://peastwood.github.io/dividers/">Website Dividers</a>
+                </p>
+                <div class="content">
+                  <p>
+                    A catalog of 41 horizontal rules and micro-dividers: plain lines, whitespace breaks,
+                    card edges, partial-width accents, gradients and printer's ornaments. Every divider
+                    comes with copy-paste code for plain CSS, Tailwind, Bootstrap, React, Vue and Svelte.
+                  </p>
+                </div>
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">MIT license</span>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="https://peastwood.github.io/dividers/" class="card-footer-item">View site</a>
+                <a href="https://github.com/peastwood/dividers" class="card-footer-item">Source on GitHub</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>PaulEastwood.org</strong> by <a href="https://pauleastwood.org">PaulEastwood</a>.
+          <strong>peastwood.github.io</strong> by
+          <a href="https://github.com/peastwood">Paul Eastwood</a> ·
+          <a href="https://github.com/peastwood/peastwood.github.io">View source</a>
         </p>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><!-- jquery -->
+
+    <script>
+      // Bulma ships no JS: toggle the mobile menu.
+      document.querySelectorAll(".navbar-burger").forEach((burger) => {
+        burger.addEventListener("click", () => {
+          const menu = document.getElementById(burger.dataset.target);
+          const open = burger.classList.toggle("is-active");
+          menu.classList.toggle("is-active", open);
+          burger.setAttribute("aria-expanded", String(open));
+        });
+      });
+    </script>
   </body>
 </html>

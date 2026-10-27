@@ -1,0 +1,12 @@
+{
+  "name": "peastwood.github.io",
+  "processes": [
+    {
+      "id": "web",
+      "name": "Static site",
+      "command": "npx --yes serve@14.2.4 -l 4331 .",
+      "port": 4331,
+      "url": "http://p09907551.web.localhost:4000/"
+    }
+  ]
+}
